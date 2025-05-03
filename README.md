@@ -1,5 +1,5 @@
 
-# 📰 Article Summarizer GUI Application
+# 📰 Web scrapper Toolkit
 
 This is a **Python desktop application** that allows users to **extract and summarize articles** from any URL using a **user-friendly GUI interface**. It also provides features to export the summary as a **PDF** or **audio file**, making it perfect for students, researchers, and readers on-the-go.
 
@@ -26,7 +26,7 @@ Make sure you have Python 3.x installed.
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/yourusername/article-summarizer-gui.git
+git clone https://github.com/Aruncodings/web_scrapper_toolkit.git
 cd article-summarizer-gui
 ```
 
@@ -39,12 +39,8 @@ pip install -r requirements.txt
 3. **Run the application**
 
 ```bash
-python main.py
+python gui.py
 ```
-
-## 📸 Screenshots
-
-> *You can add screenshots of the GUI here to make the project more visually appealing.*
 
 ## 📝 How It Works
 
@@ -57,11 +53,11 @@ python main.py
 ## 📁 Project Structure
 
 ```
-article-summarizer-gui/
+web_scrapper_toolkit/
 │
 ├── gui.py          # GUI layout and interaction logic
 ├── main.py         # Main application logic and function bindings
-├── requirements.txt# (optional) dependencies list
+├── requirements.txt# dependencies list
 └── README.md       # You're here!
 ```
 
@@ -69,7 +65,7 @@ article-summarizer-gui/
 
 **Arun**  
 *Aspiring Web Developer with a passion for Python-based automation and GUI applications.*  
-📫 [LinkedIn/GitHub link here if you have one]
+📫 (https://www.linkedin.com/in/arunkumar-mahendiran)
 
 ## 📜 License
 
