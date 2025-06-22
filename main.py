@@ -1,4 +1,4 @@
-# main.py - Core functionality for the Article Summarizer
+
 import os
 import re
 import random
@@ -27,7 +27,7 @@ from nltk.tokenize import sent_tokenize, word_tokenize
 from nltk.corpus import stopwords
 from nltk.probability import FreqDist
 
-# Download nltk resources
+
 try:
     nltk.data.find('tokenizers/punkt')
     nltk.data.find('corpora/stopwords')
@@ -35,7 +35,7 @@ except LookupError:
     nltk.download('punkt', quiet=True)
     nltk.download('stopwords', quiet=True)
 
-# Configure logging
+
 logging.basicConfig(level=logging.INFO,
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                     handlers=[logging.FileHandler("summarizer.log"), logging.StreamHandler()])
@@ -44,7 +44,7 @@ logger = logging.getLogger(__name__)
 TEMP_DIR = tempfile.mkdtemp()
 REQUEST_TIMEOUT = 30  # seconds
 
-# Initialize translator
+
 from googletrans import Translator
 
 translator = Translator()
@@ -107,7 +107,7 @@ class ArticleProcessor:
         """Ensure temp directory exists and is writable"""
         try:
             os.makedirs(TEMP_DIR, exist_ok=True)
-            # Test write permission
+          
             test_file = os.path.join(TEMP_DIR, 'test.tmp')
             with open(test_file, 'w') as f:
                 f.write('test')
